@@ -1,4 +1,6 @@
-# integer
+# integer Data types ---> int , float , complex 
+
+import random
 age = 21
 print(age)
 print(type(age))
@@ -9,12 +11,31 @@ price = 99.99
 print(price)
 print(type(price))
 
+# complex 
+iot = 1j
+print(iot)
+print(type(iot))
+
+
+# Type conversion ==> 
+tc = float(age)
+print(type(tc))
+
+
+# Random Number
+print(random.randrange(1, 10))
 
 # string
 name = "Steve"
 print(name)
 print(type(name))
 
+# Like many other popular programming languages, strings in Python are arrays of unicode characters.
+
+# However, Python does not have a character data type, a single character is simply a string with a length of 1.
+
+# Length of string
+print(len(name))
 
 # boolean
 x = True
