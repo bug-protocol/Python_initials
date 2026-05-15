@@ -36,7 +36,7 @@ print(type(name))
 
 # Length of string
 print(len(name))
-
+print(type(name[0]))
 # boolean
 x = True
 print(x)
@@ -74,3 +74,9 @@ print(type(student))
 data = None
 print(data)
 print(type(data))
+
+def greet():
+    return None==None
+
+a = greet()
+print(a)
