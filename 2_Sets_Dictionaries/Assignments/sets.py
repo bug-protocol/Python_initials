@@ -88,3 +88,20 @@ for i in st:
     cal.append([i,data.count(i)],)
 
 print(cal)
+
+# using sort
+
+cal2 = data.copy()
+cal2.sort()
+ans2 = list()
+count = 1
+for i in range(len(cal2)-1):
+    if cal2[i]==cal2[i+1]:
+        count += 1
+    else:
+        ans2.append([cal2[i], count])
+        count = 1
+
+ans2.append([cal2[i+1], count])
+
+print(ans2)
