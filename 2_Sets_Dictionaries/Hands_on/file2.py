@@ -54,3 +54,59 @@ print(dict)
 
 dict2 = dict(dict)
 print(dict2)
+
+
+# Summary
+
+# Dictionary ==> Ordered
+#                Changeable
+#                No duplicate keys
+#                dict constructor
+
+# Accessing elements
+# we can access elements using get() method
+# keys()
+# values()
+# items()
+# checking if "key" exists in dict => using "in"
+
+
+# Change items
+# update() => to update dictionary ({})
+
+# update can be used to add items in dictionary
+
+# remove items
+# pop("key") 
+# popitem() => removes last inserted element
+# del => removes items as well as dictionary
+# clear => empties dictionary
+
+
+# Looping
+# for i in dict:
+    # here i will give you keys => for values you gotta dict["i"]
+    # or use dict.keys(), dict.values(), dict.items()
+
+# Copying dictionary
+# using dict.copy()
+# using dict() constructor
+
+# Nested Dictionary
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+# for accessing
+print(myfamily["child2"]["name"])

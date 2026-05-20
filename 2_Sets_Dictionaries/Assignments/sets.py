@@ -48,7 +48,7 @@ for i in all_3:
 
 
 # Frequency Counter
-data = [1,2,2,3,4,4,4,5]
+data = [1,2,2,3,4, 4, 4, 7 , 7 ,7,8,9]
 
 # unique values
 st = set(data)
@@ -89,19 +89,27 @@ for i in st:
 
 print(cal)
 
+data = [1,2,2,3,4, 4, 4, 7 , 7 ,7,8,9]
+
+from collections import Counter
+x = dict(Counter(data))
+print(x)
+
 # using sort
 
-cal2 = data.copy()
-cal2.sort()
-ans2 = list()
-count = 1
-for i in range(len(cal2)-1):
-    if cal2[i]==cal2[i+1]:
-        count += 1
-    else:
-        ans2.append([cal2[i], count])
-        count = 1
+# cal2 = data.copy()
+# cal2.sort()
+# ans2 = list()
+# count = 1
+# for i in range(len(cal2)-1):
+#     if cal2[i]==cal2[i+1]:
+#         count += 1
+#     else:
+#         ans2.append([cal2[i], count])
+#         count = 1
 
-ans2.append([cal2[i+1], count])
+#     print(i)
 
-print(ans2)
+# ans2.append([cal2[i+1], count])
+
+# print(ans2)
