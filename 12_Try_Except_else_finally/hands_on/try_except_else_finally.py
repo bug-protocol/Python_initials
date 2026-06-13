@@ -45,4 +45,6 @@ except (ValueError, TypeError):
     print("Handled")
 finally:
     print(y)
+
+# bare except without identifications can catch almost everything
     

@@ -48,7 +48,7 @@ name = input("Enter name: ")
 # globals()
 # locals()
 
-# callable() # checks whether an object can be called using ()
+# callable(greet) # checks whether an object can be called using ()
 # like suppose greet() function is callable => Hence true
 # else => false
 

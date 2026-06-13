@@ -122,9 +122,6 @@ r"\d+"
 
 # r"" prevents Python from treating \ as an escape character
 
-
-# Interview Points
-
 # search()  -> first match
 # findall() -> all matches
 # split()   -> split string

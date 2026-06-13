@@ -48,7 +48,7 @@ logTime = """
 """
 
 pattern6 = re.compile(r'(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}:\d{2})\s+(\w+)\s+(.*)')
-print(pattern6)
+
 # Question 8
 curr = "Revenue was $1,200,300.50, profit ₹500,000 and loss €300"
 

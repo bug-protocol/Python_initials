@@ -13,4 +13,24 @@ print(next(it))
 print(next(it))
 print(next(it))
 print(next(it))
-print(next(it))
+print(next(it))  # if no element is present gives us StopIteration  
+
+class MyNumbers:
+  def __iter__(self):  # defining the iterator
+    self.a = 1
+    return self
+
+  def __next__(self):  # printing every next statement after it
+    if self.a <= 10:
+        x = self.a
+        self.a += 1
+        return x
+    else:
+       raise StopIteration # to stop the iteration after limit is reached
+
+myclass = MyNumbers()  
+myiter = iter(myclass)
+
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
